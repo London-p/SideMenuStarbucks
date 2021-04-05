@@ -28,7 +28,7 @@ struct ContentView: View {
                         Image(systemName: "list.bullet")
                             .foregroundColor(.black)
                     }))
-                    .navigationTitle("Home")
+                    .navigationTitle("Starbucks")
             }
         }
     }

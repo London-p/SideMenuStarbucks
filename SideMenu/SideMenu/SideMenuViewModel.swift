@@ -15,10 +15,10 @@ enum SideMenuViewModel: Int, CaseIterable {
     
     var title: String {
         switch self {
-        case .profile: return "Profile"
-        case .list: return "List"
-        case .bookmarks: return "Bookmarks"
-        case .message: return "Message"
+        case .profile: return "Snacks"
+        case .list: return "Deals"
+        case .bookmarks: return "Teas"
+        case .message: return "Combos"
             
         }
     }

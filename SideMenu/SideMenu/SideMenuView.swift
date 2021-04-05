@@ -11,7 +11,7 @@ struct SideMenuView: View {
     @Binding var isShowing: Bool
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [Color.green, Color.gray]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             HStack{
                 VStack {

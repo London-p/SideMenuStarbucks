@@ -45,15 +45,56 @@ struct ContentView_Previews: PreviewProvider {
 
 struct HomeView: View {
     var body: some View {
-        ZStack {
-            Color.white
-            HStack{
+        
+            ZStack {
+                Color.white
+                ScrollView {
+                    VStack {
+                        HStack{
+                            Spacer()
+                            CoffeContainerView(coffe: "Frapp", image: "3")
+                            Spacer()
+                            CoffeContainerView(coffe: "Frapp", image: "4")
+                            Spacer()
+            }.padding()
+                        HStack{
+                            Spacer()
+                            CoffeContainerView(coffe: "Frapp", image: "5")
+                            Spacer()
+                            CoffeContainerView(coffe: "Frapp", image: "6")
+                            Spacer()
+            }.padding()
+                        HStack{
+                            Spacer()
+                            CoffeContainerView(coffe: "Frapp", image: "7")
+                            Spacer()
+                            CoffeContainerView(coffe: "Frapp", image: "4")
+                            Spacer()
+                        }.padding()
+                        HStack{
+                            Spacer()
+                            CoffeContainerView(coffe: "Frapp", image: "3")
+                            Spacer()
+                            CoffeContainerView(coffe: "Frapp", image: "4")
+                            Spacer()
+            }.padding()
+
+                    }
+                    
+                }.padding()
+                }
                 
             
-            Text("Hello")
-            Spacer()
-        }
-        }
+    
+    
+    
+
+
+            
+
+
         
-    }
+        
+        
+}
 }

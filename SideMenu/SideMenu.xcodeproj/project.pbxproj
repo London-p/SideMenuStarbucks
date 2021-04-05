@@ -17,6 +17,7 @@
 		BB097898261B347F0094A05A /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB097897261B347F0094A05A /* SideMenuHeaderView.swift */; };
 		BB09789D261B34950094A05A /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09789C261B34950094A05A /* SideMenuOptionView.swift */; };
 		BB0978A2261B34AA0094A05A /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0978A1261B34AA0094A05A /* SideMenuViewModel.swift */; };
+		BB0978A7261B8EF70094A05A /* CoffeContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0978A6261B8EF70094A05A /* CoffeContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		BB097897261B347F0094A05A /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		BB09789C261B34950094A05A /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		BB0978A1261B34AA0094A05A /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		BB0978A6261B8EF70094A05A /* CoffeContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				BB097897261B347F0094A05A /* SideMenuHeaderView.swift */,
 				BB09789C261B34950094A05A /* SideMenuOptionView.swift */,
 				BB0978A1261B34AA0094A05A /* SideMenuViewModel.swift */,
+				BB0978A6261B8EF70094A05A /* CoffeContainerView.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				BB097893261B34560094A05A /* SideMenuView.swift in Sources */,
 				BB097898261B347F0094A05A /* SideMenuHeaderView.swift in Sources */,
+				BB0978A7261B8EF70094A05A /* CoffeContainerView.swift in Sources */,
 				BB097867261B30A30094A05A /* ContentView.swift in Sources */,
 				BB09789D261B34950094A05A /* SideMenuOptionView.swift in Sources */,
 				BB0978A2261B34AA0094A05A /* SideMenuViewModel.swift in Sources */,

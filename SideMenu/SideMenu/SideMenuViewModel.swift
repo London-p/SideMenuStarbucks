@@ -15,7 +15,7 @@ enum SideMenuViewModel: Int, CaseIterable {
     
     var title: String {
         switch self {
-        case .profile: return "Snacks"
+        case .profile: return "cart"
         case .list: return "Deals"
         case .bookmarks: return "Teas"
         case .message: return "Combos"
@@ -24,7 +24,7 @@ enum SideMenuViewModel: Int, CaseIterable {
     }
     var imageName: String {
         switch self {
-        case .profile: return "person"
+        case .profile: return "cart"
         case .list: return "list.bullet"
         case .bookmarks: return "bookmark"
         case .message: return "bubble.left"

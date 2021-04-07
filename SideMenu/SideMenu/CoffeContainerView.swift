@@ -10,6 +10,7 @@ import SwiftUI
 struct CoffeContainerView: View {
     var coffe: String
     var image: String
+  
     var body: some View {
         VStack {
             Text(coffe)
@@ -21,10 +22,7 @@ struct CoffeContainerView: View {
                 .cornerRadius(15)
             Text("5.99")
                 .foregroundColor(.white)
-            Button(action: {}) {
-                Text("Add to Cart")
-                    .foregroundColor(.white)
-            }
+            
 }.frame(width: 150, height: 230).background(Color.gray)
 .cornerRadius(15)
     }

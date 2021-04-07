@@ -9,14 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isShowing = false
+    @State private var cart1 = false
+    
+    
+    
+    
     
     var body: some View {
         NavigationView {
             ZStack {
                 if isShowing {
-                    SideMenuView(isShowing: $isShowing)
+                    SideMenuView(isShowing: $isShowing,cart1: $cart1)
+                    
                 }
-                HomeView()
+                HomeView(cart1: $cart1)
                     .cornerRadius(isShowing ? 20 : 10)
                     .offset(x: isShowing ? 300 : 0, y: isShowing ? 44 : 0)
                     .scaleEffect(isShowing ? 0.8 : 1)
@@ -44,15 +50,26 @@ struct ContentView_Previews: PreviewProvider {
 
 
 struct HomeView: View {
+    @Binding var cart1: Bool
     var body: some View {
-        
+ 
             ZStack {
                 Color.white
                 ScrollView {
                     VStack {
                         HStack{
                             Spacer()
-                            CoffeContainerView(coffe: "Frapp", image: "3")
+                            VStack{
+                            CoffeContainerView(coffe: "Frapp", image: "7")
+                            Button(action: {
+                                cart1.toggle()
+                                print("hello")
+                            }) {
+                                Text("Add to Cart")
+                                    .foregroundColor(.black)
+                            }
+                            }
+
                             Spacer()
                             CoffeContainerView(coffe: "Frapp", image: "4")
                             Spacer()
@@ -66,7 +83,10 @@ struct HomeView: View {
             }.padding()
                         HStack{
                             Spacer()
+                            VStack{
                             CoffeContainerView(coffe: "Frapp", image: "7")
+                            
+                            }
                             Spacer()
                             CoffeContainerView(coffe: "Frapp", image: "4")
                             Spacer()
